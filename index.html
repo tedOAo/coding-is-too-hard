@@ -1,105 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Pokeball</title>
+<html>
+<head>
+  <title>computer history</title>
+  <style>
+   body {
+     background-color: black;
+   }
+   p {
+     background-color:gray; color:red;
+     color:red;
+     border:2px solid blue;
+   }
+   a{
+     //display:none;
+   }
+   .grup1 {background-color: grey;
+   }
+   #_id1 {
+     background-color: grey;
+     text-align: center;
+   }
+  </style>
+</head>
+  <body>
+    <div>
+      <p class"group1" id="_id1"> 저는 정보를 정리한 사이트를 만들고 싶습니다.</p>
+    <p>저는 정보를 정리한 사이트를 만들고 싶습니다</p>
+    <p class"group1" id="_id1"> 크리킨디 센터에 대한 정보</p>
+    <p> 크리킨디 센터에 관한 정보</p>
+    <p>github</p>
+    </div>
+      <a href="https://github.com/happydeveloper/krkd.eco.coding/edit/master/index_dai.html">기본 저장소 </a>
+      <a href="https://www.naver.com/"target="_blank" title="html5 specification">hypertxet markup language (HTML)</a>
 
-        <style>
-            .container {
-                margin-top: 60px;
-            }
+      <a href="https://developer.mozilla.org/en-US/" target="_blank">
+       <img src="https://mdn.mozillademos.org/files/6851/mdn_logo.png" alt="MDN logo" />
+   </a>
+<div>
+  <p style="color:blue">
+   <a href="https://www.freepik.com/free-photos-vectors/skull" target="_blank"><img src="https://img.freepik.com/free-vector/dark-hand-drawn-skull-background_23-2147627282.jpg?size=338&ext=jpg" alt="skull logo" /></a>해골
+</p>
+</div>
 
-            .pokeball {
-                box-sizing: border-box;
-                --pokeball-size: 250px;
-                --pokeball-inner-size: 80px;
-                --pokeball-border-size: 10px;
-
-                --before-diameter: var(--pokeball-inner-size);
-                --after-diameter: calc(var(--before-diameter) - (var(--pokeball-border-size) * 3));
-
-                border: var(--pokeball-border-size) solid #262122;
-                width: var(--pokeball-size);
-                height: var(--pokeball-size);
-                border-radius: 100%;
-                margin: 0 auto;
-                position: relative;
-
-                background: linear-gradient(
-                    150deg,
-                    #BA0C2F 0%,
-                    #BA0C2F 44%,
-                    #262122 44%,
-                    #262122 56%,
-                    #fff 56%,
-                    #fff 100%
-                );
-            }
-
-            .pokeball:before,
-            .pokeball:after {
-                content: " ";
-                border-radius: 100%;
-                display: block;
-                position: absolute;
-            }
-
-            .pokeball:before {
-                width: var(--before-diameter);
-                height: var(--before-diameter);
-                top: calc(50% - var(--before-diameter) / 2);
-                left: calc(50% - var(--before-diameter) / 2);
-                background: #262122;
-            }
-
-            .pokeball:after {
-                width: var(--after-diameter);
-                height: var(--after-diameter);
-            
-                top: calc(50% - ((var(--after-diameter) / 2) + var(--pokeball-border-size)));
-                left: calc(50% - ((var(--after-diameter) / 2) + var(--pokeball-border-size)));
-
-                background: #fff;
-                border: double var(--pokeball-border-size) #262122;
-            }
-
-            .pokeball-animated {
-                animation-duration: 1s;
-                animation-fill-mode: both;
-                animation-iteration-count: infinite;
-                animation-name: shake;
-            }
-
-            @keyframes shake {
-                from {
-                    transform: none;
-                }
-
-                20% {
-                    transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg);
-                }
-
-                40% {
-                    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 5deg);
-                }
-
-                50% {
-                    transform: translate3d(-10%, 0, 0) rotate3d(0, 0, 1, -10deg);
-                }
-
-                60% {
-                    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg);
-                }
-
-                to {
-                    transform: none;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="pokeball pokeball-animated"></div>
-        </div>
-    </body>
-</html>
+  </body>
+ </html>
